@@ -1,42 +1,65 @@
 ---
 name: domain-authority-auditor
-version: "5.0.0"
-description: 'Run the full 40-item CITE domain authority audit across 4 dimensions with domain-type weighting and veto checks. Use when the user asks "how trustworthy is my site", "is my domain credible", "domain trust score", "audit domain authority", "CITE audit", "how authoritative is my site", "domain credibility check", "is my domain trustworthy", "domain credibility score", "domain rating". For content-level assessment, see content-quality-auditor. For link profile details, see backlink-analyzer.'
+description: '40-item CITE domain audit: 4 dimensions, domain-type weighting, veto checks, trust scoring. "Is my site trustworthy" / "域名可信吗" / "权威度多少". 域名权威/网站可信度/域名评分 ドメイン権威 도메인권위 autoridad dominio'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
-    - domain audit
-    - credibility
-    - domain scoring
     - domain-authority
     - domain-rating
     - domain-trust
-    - trust-signals
-    - site-authority
-    - da-checker
-    - ahrefs-dr
-    - moz-da
     - cite-framework
-    - domain-strength
+    - site-authority
+    - 域名权威
+    - ドメイン権威
+    - 도메인권위
+    - autoridad-dominio
   triggers:
-    - "how trustworthy is my site"
-    - "is my domain credible"
-    - "domain trust score"
+    # EN-formal
     - "audit domain authority"
     - "CITE audit"
-    - "how authoritative is my site"
+    - "domain trust score"
     - "domain credibility check"
     - "domain rating"
     - "site authority"
+    # EN-casual
+    - "how trustworthy is my site"
+    - "is my domain credible"
     - "is my domain trustworthy"
     - "domain credibility score"
+    - "Google penalty recovery"
+    - "my site got penalized"
+    # EN-question
+    - "how authoritative is my site"
+    - "what is my domain authority"
+    # ZH-pro
+    - "域名权威审计"
+    - "网站可信度"
+    - "域名评分"
+    # ZH-casual
+    - "域名可信吗"
+    - "权威度多少"
+    - "网站可信度怎么样"
+    # JA
+    - "ドメイン権威"
+    - "ドメイン評価"
+    # KO
+    - "도메인 권위"
+    - "도메인 신뢰도"
+    # ES
+    - "autoridad de dominio"
+    - "auditoría de dominio"
+    # PT
+    - "autoridade de domínio"
+    # Misspellings
+    - "domain autority"
 ---
 
 # Domain Authority Auditor

@@ -1,35 +1,30 @@
 ---
 name: serp-analysis
-version: "5.0.0"
-description: 'Analyze search engine results pages to understand ranking factors, SERP features, user intent patterns, and AI overview triggers. Use when the user asks to "analyze search results", "SERP analysis", "what ranks for", "SERP features", "why does this page rank", "featured snippets", "AI overviews", or "what does Google show for", "what shows up for this search", or "who ranks for this". For tracking rankings over time, see rank-tracker. For keyword discovery, see keyword-research.'
+description: 'Analyze SERPs: ranking factors, features, intent, AI overviews, featured snippets, People Also Ask. "What ranks for this" / "谁排第一" / "搜索结果分析". SERP分析/搜索结果/精选摘要 検索結果チェック/リッチリザルト 검색결과분석 análisis SERP'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 allowed-tools: WebFetch
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "high"
   tags:
     - seo
     - geo
-    - serp
-    - search results
-    - ranking factors
-    - serp features
-    - ai overviews
-    - featured snippets
-    - search intent
+    - serp-analysis
     - serp-features
     - featured-snippet
-    - google-ai-overview
     - ai-overview
     - people-also-ask
-    - knowledge-panel
-    - serp-composition
-    - position-zero
-    - serp-intent
+    - search-intent
+    - SERP分析
+    - 検索結果分析
+    - 검색결과
+    - analisis-serp
   triggers:
+    # EN-formal
     - "analyze search results"
     - "SERP analysis"
     - "what ranks for"
@@ -37,11 +32,38 @@ metadata:
     - "why does this page rank"
     - "featured snippets"
     - "AI overviews"
+    # EN-casual
     - "what's on page one for this query"
     - "who ranks for this keyword"
-    - "what does Google show for", "what shows up for this search", or "who ranks for this"
+    - "what does Google show for"
     - "what shows up for this search"
-    - "who ranks for this"
+    - "who is on page one"
+    # EN-question
+    - "why does this page rank first"
+    - "what SERP features appear for"
+    # ZH-pro
+    - "SERP分析"
+    - "搜索结果分析"
+    - "精选摘要"
+    - "AI概览"
+    # ZH-casual
+    - "谁排第一"
+    - "搜索结果长什么样"
+    - "谁排在前面"
+    # JA
+    - "検索結果ページ分析"
+    - "検索結果分析"
+    - "強調スニペット"
+    # KO
+    - "검색 결과 분석"
+    - "SERP 분석"
+    # ES
+    - "análisis SERP"
+    - "análisis de resultados de búsqueda"
+    # PT
+    - "análise de SERP"
+    # Misspellings
+    - "serp anaylsis"
 ---
 
 # SERP Analysis

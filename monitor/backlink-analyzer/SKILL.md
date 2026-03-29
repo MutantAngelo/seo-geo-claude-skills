@@ -1,50 +1,78 @@
 ---
 name: backlink-analyzer
-version: "5.0.0"
-description: 'Analyze backlink profiles to assess link authority, identify toxic links, discover link building opportunities, and monitor competitors. Use when the user asks to "analyze backlinks", "check link profile", "find toxic links", "link building opportunities", "who links to me", "how do I get more backlinks", "disavow links", or "off-page SEO". For internal link analysis, see internal-linking-optimizer. For competitor link profiles, see competitor-analysis.'
+description: 'Analyze backlinks: link authority, toxic links, building opportunities, competitor gaps. "Who links to me" / "外链怎么做" / "有垃圾外链". 外链分析/反向链接/有毒链接/链接建设 被リンク分析 백링크분석 análisis de backlinks'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "low"
   tags:
     - seo
     - backlinks
-    - link building
-    - link profile
-    - toxic links
-    - off-page seo
-    - link authority
-    - domain authority
-    - link acquisition
     - link-building
-    - backlink-profile
+    - link-profile
     - toxic-links
+    - off-page-seo
     - link-audit
     - referring-domains
-    - domain-rating
-    - link-outreach
     - disavow
-    - dr-score
-    - link-quality
-    - lost-backlinks
+    - ahrefs-alternative
+    - 外链分析
+    - 被リンク
+    - 백링크
+    - backlinks-seo
   triggers:
+    # EN-formal
     - "analyze backlinks"
     - "check link profile"
     - "find toxic links"
     - "link building opportunities"
-    - "off-page SEO"
-    - "who links to me"
-    - "I have spammy links"
-    - "how do I get more links"
+    - "link profile analysis"
     - "backlink audit"
     - "link quality"
+    # EN-casual
     - "who links to me"
     - "I have spammy links"
     - "how do I get more backlinks"
+    - "how do I get more links"
     - "disavow links"
+    - "link building outreach"
+    - "disavow file"
+    # EN-question
+    - "how to build backlinks"
+    - "how to find toxic backlinks"
+    # ZH-pro
+    - "外链分析"
+    - "反向链接"
+    - "有毒链接"
+    - "链接建设"
+    # ZH-casual
+    - "外链怎么做"
+    - "有垃圾外链"
+    - "谁链接到我"
+    - "友链"
+    - "互换友链"
+    - "外链建设"
+    # JA
+    - "被リンク分析"
+    - "バックリンク"
+    - "リンク構築"
+    # KO
+    - "백링크 분석"
+    - "링크 빌딩"
+    - "누가 내 사이트 링크해?"
+    - "백링크 어떻게 늘려?"
+    # ES
+    - "análisis de backlinks"
+    - "enlaces entrantes"
+    # PT
+    - "análise de backlinks"
+    # Misspellings
+    - "backlink anaylsis"
+    - "backlnk analysis"
 ---
 
 # Backlink Analyzer

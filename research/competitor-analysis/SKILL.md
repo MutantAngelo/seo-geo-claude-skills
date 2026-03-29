@@ -1,44 +1,79 @@
 ---
 name: competitor-analysis
-version: "5.0.0"
-description: 'Analyze competitor SEO and GEO strategies including ranking keywords, content approaches, backlink profiles, and AI citation patterns. Use when the user asks to "analyze competitors", "competitive analysis", "what are my competitors doing", "why do they rank higher", "competitor keywords", "competitor backlinks", or "spy on competitor SEO", "what are they doing better", or "why do they outrank me". For content-focused gap analysis, see content-gap-analysis. For link profile specifics, see backlink-analyzer.'
+description: 'Analyze competitor SEO/GEO: keywords, content, backlinks, AI citations, traffic share. "Why do they outrank me" / "竞品怎么做的" / "他们排名为什么比我高". 竞品分析/竞争对手/排名差距 ライバル分析/競合チェック 경쟁분석 análisis competidores'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
-    - competitor analysis
-    - competitive intelligence
+    - competitor-analysis
+    - competitive-intelligence
     - benchmarking
-    - market analysis
-    - ranking analysis
-    - competitive-seo
     - competitor-keywords
     - competitor-backlinks
     - market-analysis
-    - battlecard
-    - serp-competition
-    - domain-comparison
-    - content-benchmarking
-    - gap-analysis
+    - spyfu-alternative
+    - 竞品分析
+    - 競合分析
+    - 경쟁분석
+    - analisis-competitivo
   triggers:
+    # EN-formal
     - "analyze competitors"
     - "competitor SEO"
-    - "who ranks for"
     - "competitive analysis"
-    - "what are my competitors doing"
     - "competitor keywords"
     - "competitor backlinks"
+    - "market analysis"
+    - "competitive intelligence"
+    # EN-casual
+    - "what are my competitors doing"
     - "what are they doing differently"
     - "why do they rank higher"
-    - "spy on competitor SEO", "what are they doing better", or "why do they outrank me"
+    - "spy on competitor SEO"
     - "what are they doing better"
     - "why do they outrank me"
+    # EN-question
+    - "who are my SEO competitors"
+    - "how do I beat my competitors"
+    - "why do competitors rank higher"
+    # EN-competitor
+    - "SpyFu alternative"
+    - "Semrush competitor analysis"
+    - "Ahrefs competitor tool"
+    # ZH-pro
+    - "竞品分析"
+    - "竞争对手分析"
+    - "竞品SEO"
+    - "对标分析"
+    - "竞争情报"
+    # ZH-casual
+    - "竞品怎么做的"
+    - "他们排名为什么比我高"
+    - "看看对手在干什么"
+    - "为什么他们排名好"
+    # JA
+    - "競合分析"
+    - "競合SEO分析"
+    - "ライバル分析"
+    # KO
+    - "경쟁 분석"
+    - "경쟁사 SEO"
+    - "경쟁사 키워드"
+    # ES
+    - "análisis de competidores"
+    - "análisis competitivo SEO"
+    # PT
+    - "análise de concorrentes"
+    # Misspellings
+    - "competitve analysis"
+    - "compeditor analysis"
 ---
 
 # Competitor Analysis

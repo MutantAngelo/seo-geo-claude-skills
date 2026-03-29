@@ -1,37 +1,86 @@
 ---
 name: geo-content-optimizer
-version: "5.0.0"
-description: 'Optimize content for AI citation across ChatGPT, Perplexity, Google AI Overviews, and Gemini with quotable statements and structured Q&A. Use when the user asks to "optimize for AI", "get cited by ChatGPT", "GEO optimization", "appear in AI answers", "make content AI-quotable", "Google AI Overview optimization", "get AI to mention my brand", "appear in ChatGPT answers", or "AI doesn'\''t know about us". Adds quotable statements, structured Q&A, precise statistics with sources, expert attribution, and FAQ schema. Uses CORE-EEAT GEO-First items as optimization targets. For SEO-focused writing, see seo-content-writer. For entity and brand AI presence, see entity-optimizer.'
+description: "Optimize content for AI citations: ChatGPT, Perplexity, AI Overviews, Gemini, Claude, Copilot. Quotable statements, Q&A, attribution. \"AI doesn't mention my brand\" / \"让AI引用我\" / \"AI搜不到\". AI引用优化/GEO优化/AI搜索 AI最適化/コンテンツ最適化 AI최적화 optimización IA"
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "high"
   tags:
     - geo
     - ai-citations
-    - chatgpt
-    - perplexity-ai
+    - chatgpt-optimization
+    - perplexity-optimization
     - google-ai-overview
     - gemini
-    - llm-citations
     - generative-engine-optimization
-    - ai-overview-optimization
+    - llm-citations
+    - ai-seo
     - quotable-content
+    - AI引用优化
+    - GEO优化
+    - AI最適化
+    - AI최적화
+    - optimizacion-ia
   triggers:
+    # EN-formal
     - "optimize for AI"
     - "get cited by ChatGPT"
     - "AI optimization"
     - "appear in AI answers"
     - "GEO optimization"
+    - "generative engine optimization"
     - "AI-friendly content"
     - "LLM citations"
+    # EN-casual
     - "get cited by AI"
     - "show up in ChatGPT answers"
     - "AI doesn't mention my brand"
     - "make content AI-quotable"
+    - "how do I get AI to mention me"
+    - "ChatGPT doesn't know my brand"
+    # EN-question
+    - "how to appear in AI answers"
+    - "how to get cited by AI"
+    - "why doesn't AI mention my brand"
+    # EN-competitor
+    - "Perplexity optimization"
+    - "how to rank in ChatGPT answers"
+    - "AI Overview optimization tool"
+    # ZH-pro
+    - "AI引用优化"
+    - "GEO优化"
+    - "生成式引擎优化"
+    - "AI搜索优化"
+    - "AI可引用内容"
+    # ZH-casual
+    - "让AI引用我"
+    - "ChatGPT搜不到我"
+    - "AI不提我的品牌"
+    - "怎么让AI推荐我"
+    - "AI搜不到"
+    # JA
+    - "AIコンテンツ最適化"
+    - "AI引用されるコンテンツ"
+    - "ChatGPT対策"
+    - "AI検索最適化"
+    # KO
+    - "AI 최적화"
+    - "AI 검색 최적화"
+    - "ChatGPT 인용"
+    # ES
+    - "optimización para IA"
+    - "aparecer en respuestas de IA"
+    - "citación de IA"
+    # PT
+    - "otimização para IA"
+    - "aparecer nas respostas da IA"
+    # Misspellings
+    - "generative engine optimisation"
+    - "GEO optimisation"
 ---
 
 # GEO Content Optimizer

@@ -1,28 +1,31 @@
 ---
 name: schema-markup-generator
-version: "5.0.0"
-description: 'Generate Schema.org JSON-LD structured data for FAQ, HowTo, Article, Product, LocalBusiness, and 6 other types targeting rich results. Use when the user asks to "add schema markup", "generate structured data", "JSON-LD", "FAQ schema", "rich snippets", "I want star ratings in Google", "structured data validation errors", "add rich snippets", or "structured data for my page". Produces validated markup targeting Google Rich Results, Bing structured data, and AI system understanding. Validates against Google Rich Results Test requirements. For broader technical SEO, see technical-seo-checker. For meta tag optimization, see meta-tags-optimizer.'
+description: 'Generate JSON-LD for FAQ, HowTo, Article, Product, LocalBusiness rich results and AI understanding. "Add structured data" / "添加结构化数据" / "要星级评分". Schema标记/富摘要/JSON-LD/结构化 構造化データ 스키마마크업 datos estructurados'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 allowed-tools: WebFetch
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - structured-data
     - json-ld
     - rich-results
-    - rich-snippets
     - faq-schema
     - howto-schema
     - product-schema
     - article-schema
-    - localbusiness-schema
     - schema-org
+    - 结构化数据
+    - 構造化データ
+    - 스키마마크업
+    - datos-estructurados
   triggers:
+    # EN-formal
     - "add schema markup"
     - "generate structured data"
     - "JSON-LD"
@@ -30,10 +33,39 @@ metadata:
     - "FAQ schema"
     - "schema.org"
     - "structured data markup"
+    # EN-casual
     - "add FAQ rich results"
     - "I want star ratings in Google"
     - "product markup"
     - "recipe schema"
+    - "add structured data to my page"
+    # EN-question
+    - "how to add schema markup"
+    - "how to get rich snippets"
+    # ZH-pro
+    - "结构化数据"
+    - "Schema标记"
+    - "JSON-LD生成"
+    - "富摘要"
+    # ZH-casual
+    - "添加结构化数据"
+    - "要星级评分"
+    - "搜索结果要好看"
+    # JA
+    - "構造化データ"
+    - "スキーママークアップ"
+    - "リッチリザルト"
+    # KO
+    - "스키마 마크업"
+    - "구조화 데이터"
+    # ES
+    - "datos estructurados"
+    - "marcado schema"
+    # PT
+    - "dados estruturados"
+    # Misspellings
+    - "shema markup"
+    - "structred data"
 ---
 
 # Schema Markup Generator

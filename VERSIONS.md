@@ -8,28 +8,66 @@ Current versions of all skills. Agents can fetch this file from `https://raw.git
 
 | Skill | Category | Version | Last Updated |
 |-------|----------|---------|--------------|
-| keyword-research | research | 5.0.0 | 2026-03-29 |
-| competitor-analysis | research | 5.0.0 | 2026-03-29 |
-| serp-analysis | research | 5.0.0 | 2026-03-29 |
-| content-gap-analysis | research | 5.0.0 | 2026-03-29 |
-| seo-content-writer | build | 5.0.0 | 2026-03-29 |
-| geo-content-optimizer | build | 5.0.0 | 2026-03-29 |
-| meta-tags-optimizer | build | 5.0.0 | 2026-03-29 |
-| schema-markup-generator | build | 5.0.0 | 2026-03-29 |
-| on-page-seo-auditor | optimize | 5.0.0 | 2026-03-29 |
-| technical-seo-checker | optimize | 5.0.0 | 2026-03-29 |
-| internal-linking-optimizer | optimize | 5.0.0 | 2026-03-29 |
-| content-refresher | optimize | 5.0.0 | 2026-03-29 |
-| rank-tracker | monitor | 5.0.0 | 2026-03-29 |
-| backlink-analyzer | monitor | 5.0.0 | 2026-03-29 |
-| performance-reporter | monitor | 5.0.0 | 2026-03-29 |
-| alert-manager | monitor | 5.0.0 | 2026-03-29 |
-| content-quality-auditor | cross-cutting | 5.0.0 | 2026-03-29 |
-| domain-authority-auditor | cross-cutting | 5.0.0 | 2026-03-29 |
-| entity-optimizer | cross-cutting | 5.0.0 | 2026-03-29 |
-| memory-management | cross-cutting | 5.0.0 | 2026-03-29 |
+| keyword-research | research | 5.1.0 | 2026-03-29 |
+| competitor-analysis | research | 5.1.0 | 2026-03-29 |
+| serp-analysis | research | 5.1.0 | 2026-03-29 |
+| content-gap-analysis | research | 5.1.0 | 2026-03-29 |
+| seo-content-writer | build | 5.1.0 | 2026-03-29 |
+| geo-content-optimizer | build | 5.1.0 | 2026-03-29 |
+| meta-tags-optimizer | build | 5.1.0 | 2026-03-29 |
+| schema-markup-generator | build | 5.1.0 | 2026-03-29 |
+| on-page-seo-auditor | optimize | 5.1.0 | 2026-03-29 |
+| technical-seo-checker | optimize | 5.1.0 | 2026-03-29 |
+| internal-linking-optimizer | optimize | 5.1.0 | 2026-03-29 |
+| content-refresher | optimize | 5.1.0 | 2026-03-29 |
+| rank-tracker | monitor | 5.1.0 | 2026-03-29 |
+| backlink-analyzer | monitor | 5.1.0 | 2026-03-29 |
+| performance-reporter | monitor | 5.1.0 | 2026-03-29 |
+| alert-manager | monitor | 5.1.0 | 2026-03-29 |
+| content-quality-auditor | cross-cutting | 5.1.0 | 2026-03-29 |
+| domain-authority-auditor | cross-cutting | 5.1.0 | 2026-03-29 |
+| entity-optimizer | cross-cutting | 5.1.0 | 2026-03-29 |
+| memory-management | cross-cutting | 5.1.0 | 2026-03-29 |
 
 ## Changelog
+
+### v5.1.0 (2026-03-29)
+
+Multilingual trigger optimization and refinement for ClawHub/skills.sh marketplace discoverability. Reviewed by 8-agent team (code reviewer, trigger quality, description SEO, ZH/JA/KO/ES/EN language specialists).
+
+**Description rewrite (all 20 skills)**:
+- Rewrote all descriptions to fit within 250-char truncation limit (were 376-655 chars, all truncated)
+- Added 5-language coverage: EN + ZH + JA + KO + ES in every description
+- Pain-point phrasing over feature names for better LLM semantic matching
+- Reordered YAML fields: name → description → version (maximizes ClawHub file[0:250] info density)
+- Refined description openings: content-quality-auditor leads with "Publish-readiness gate", memory-management leads with "Persist SEO/GEO campaign context"
+- geo-content-optimizer now names 6 AI products: ChatGPT, Perplexity, AI Overviews, Gemini, Claude, Copilot
+
+**Triggers expansion (all 20 skills, ~247 → ~750+)**:
+- 11 categories: EN-formal, EN-casual, EN-question, EN-competitor, ZH-pro, ZH-casual, JA, KO, ES, PT, misspellings
+- ZH: Added 挖词, 收录, 友链, 月报, 品牌词, TDK, 锚文本, 词库, 数据看板 and 20+ more
+- KO: Added casual question forms to 8 skills (키워드 어떻게 찾아요, 왜 순위가 안 올라가, etc.)
+- JA: Added ロングテールキーワード, インデックス登録, 検索順位チェック, モバイル最適化, 検索意図分析
+- ES: Added posicionamiento web, mi sitio no aparece en Google, posicionamiento SEO
+- PT: Added meu site não aparece no Google, monitoramento de posições
+- EN: Added canonical tag issues, my rankings tanked, Google penalty recovery, Perplexity/ChatGPT competitor triggers
+
+**Trigger mislocation fixes**:
+- Moved "排名上不去" from seo-content-writer to on-page-seo-auditor
+- Replaced "帮我写软文" (advertorial) → "帮我写SEO文章"
+- Replaced "网站打不开" (hosting) → "网站加载太慢"
+- Replaced "流量太低" (ambiguous) → "帮我挖词"
+- Replaced "网站权重怎么样" (Baidu Weight) → "网站可信度怎么样"
+- Fixed EN cross-skill ambiguity: "off-page SEO" → "link profile analysis"
+
+**Tags expansion (all 20 skills)**:
+- Added multilingual tags (ZH, JA, KO, ES) to all skills
+- Added competitor tool cross-discovery tags
+
+**Infrastructure**:
+- Added scripts/validate-descriptions.py (dual-budget validation: desc≤250 + file[0:250] coverage)
+- Fixed 5 pre-existing YAML formatting bugs in trigger lists
+- Fixed JA trigger quality: サープ→検索結果, パフォーマンス報告→パフォーマンスレポート
 
 ### v5.0.0 (2026-03-29)
 

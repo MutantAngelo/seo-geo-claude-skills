@@ -1,45 +1,79 @@
 ---
 name: content-refresher
-version: "5.0.0"
-description: 'Refresh old blog posts and outdated content with current statistics, new information, and freshness signals to restore search rankings. Use when the user asks to "update old content", "refresh content", "content is outdated", "improve declining rankings", "revive old blog posts", "traffic is declining on this page", "rankings dropped for this article", or "this post is outdated". For writing new content from scratch, see seo-content-writer. For auditing without rewriting, see on-page-seo-auditor.'
+description: 'Refresh outdated posts with current stats, new sections, freshness signals to restore rankings. "Traffic is dropping" / "排名下降了" / "文章过时了". 内容更新/文章刷新/排名恢复/流量下降 コンテンツ更新 콘텐츠갱신 actualizar contenido'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
-    - content refresh
-    - content update
-    - outdated content
-    - content decay
-    - ranking recovery
-    - content optimization
+    - content-refresh
     - content-update
     - content-decay
+    - ranking-recovery
     - evergreen-content
-    - content-freshness
-    - content-revival
-    - refresh-content
-    - update-statistics
-    - republishing
     - content-lifecycle
+    - 内容更新
+    - コンテンツ更新
+    - 콘텐츠갱신
+    - actualizar-contenido
   triggers:
+    # EN-formal
     - "update old content"
     - "refresh content"
     - "content is outdated"
     - "improve declining rankings"
     - "revive old blog posts"
     - "content decay"
+    - "content refresh strategy"
+    # EN-casual
+    - "traffic is dropping"
     - "ranking dropped"
     - "this post is outdated"
     - "traffic is declining on this page"
     - "rankings dropped for this article"
-    - "this post is outdated"
-    - "traffic is dropping"
+    - "my old content needs updating"
+    # EN-question
+    - "how to fix declining traffic"
+    - "why is my content losing rankings"
+    - "how often should I update content"
+    # EN-competitor
+    - "Clearscope content refresh"
+    - "MarketMuse content update"
+    # ZH-pro
+    - "内容更新"
+    - "内容刷新"
+    - "排名恢复"
+    - "内容衰减"
+    - "内容生命周期"
+    # ZH-casual
+    - "排名下降了"
+    - "文章过时了"
+    - "流量掉了"
+    - "老文章怎么办"
+    # JA
+    - "コンテンツ更新"
+    - "コンテンツリフレッシュ"
+    - "記事更新"
+    # KO
+    - "콘텐츠 갱신"
+    - "콘텐츠 업데이트"
+    - "순위 하락"
+    - "순위 하락 원인"
+    - "오래된 글 어떻게 해?"
+    # ES
+    - "actualizar contenido"
+    - "refrescar contenido antiguo"
+    # PT
+    - "atualizar conteúdo"
+    # Misspellings
+    - "content refesh"
+    - "content refreshh"
 ---
 
 # Content Refresher

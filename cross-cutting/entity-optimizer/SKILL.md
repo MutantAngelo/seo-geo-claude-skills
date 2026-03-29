@@ -1,44 +1,72 @@
 ---
 name: entity-optimizer
-version: "5.0.0"
-description: 'Audit and build entity presence across Google Knowledge Graph, Wikidata, and AI systems for brand recognition and AI citations. Use when the user asks "Google doesn''t know my brand", "no knowledge panel", "establish my brand", "optimize entity presence", "build knowledge graph", "improve knowledge panel", "entity audit", "establish brand entity". For structured data implementation, see schema-markup-generator. For content-level AI optimization, see geo-content-optimizer.'
+description: "Build entity presence in Knowledge Graph, Wikidata, AI systems for brand recognition and citations. \"Google doesn't know my brand\" / \"品牌搜不到\" / \"没有知识面板\". 实体优化/知识图谱/品牌实体 エンティティ 엔티티 entidad SEO"
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "high"
   tags:
     - seo
     - geo
-    - entity optimization
-    - knowledge graph
-    - knowledge panel
-    - brand entity
-    - entity disambiguation
-    - wikidata
-    - structured entities
+    - entity-optimization
     - knowledge-graph
-    - google-knowledge-panel
-    - entity-seo
+    - knowledge-panel
     - brand-entity
-    - entity-recognition
-    - knowledge-base
-    - dbpedia
-    - brand-presence
+    - wikidata
+    - entity-disambiguation
+    - 实体优化
+    - エンティティ
+    - 엔티티
+    - entidad-seo
   triggers:
-    - "Google doesn't know my brand"
-    - "no knowledge panel"
-    - "establish my brand"
+    # EN-formal
     - "optimize entity presence"
     - "build knowledge graph"
     - "improve knowledge panel"
     - "entity audit"
     - "establish brand entity"
-    - "knowledge panel"
     - "entity disambiguation"
+    # EN-casual
+    - "Google doesn't know my brand"
+    - "no knowledge panel"
+    - "establish my brand"
     - "establish my brand as an entity"
+    - "get a Google knowledge card"
+    - "no Wikipedia entry"
+    # EN-question
+    - "how to get a knowledge panel"
+    - "how to build brand entity"
+    # ZH-pro
+    - "实体优化"
+    - "知识图谱"
+    - "品牌实体"
+    - "知识面板"
+    - "品牌词"
+    - "品牌词优化"
+    # ZH-casual
+    - "品牌搜不到"
+    - "没有知识面板"
+    - "Google不认识我的品牌"
+    # JA
+    - "エンティティ最適化"
+    - "ナレッジパネル"
+    # KO
+    - "엔티티 최적화"
+    - "지식 패널"
+    - "구글이 내 브랜드 모르는데?"
+    - "지식 패널 만들려면?"
+    # ES
+    - "optimización de entidad"
+    - "panel de conocimiento"
+    # PT
+    - "otimização de entidade"
+    # Misspellings
+    - "knowlege panel"
+    - "enity optimization"
 ---
 
 # Entity Optimizer

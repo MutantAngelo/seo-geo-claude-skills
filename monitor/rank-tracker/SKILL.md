@@ -1,45 +1,73 @@
 ---
 name: rank-tracker
-version: "5.0.0"
-description: 'Track keyword ranking positions and SERP position changes over time in both traditional search and AI-generated responses. Use when the user asks to "track rankings", "check keyword positions", "monitor SERP positions", "how am I ranking", "where do I rank for this keyword", "did my rankings change", "ranking changes", or "keyword position tracking". For automated alerting, see alert-manager. For comprehensive reports, see performance-reporter.'
+description: 'Track keyword rankings and SERP changes in traditional search and AI responses over time. "How am I ranking" / "查排名" / "排名变了吗". 排名追踪/关键词排名/SERP监控/排名变化 ランキング追跡 순위추적 seguimiento rankings'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
-    - rank tracking
-    - keyword positions
-    - serp monitoring
-    - ranking trends
-    - position tracking
-    - ai ranking
+    - rank-tracking
     - keyword-rankings
-    - position-tracking
-    - ranking-changes
     - serp-positions
-    - search-visibility
-    - ranking-drops
-    - ranking-improvements
-    - rank-monitoring
+    - ranking-changes
+    - position-tracking
+    - 排名追踪
+    - ランキング追跡
+    - 순위추적
+    - seguimiento-rankings
   triggers:
+    # EN-formal
     - "track rankings"
     - "check keyword positions"
     - "ranking changes"
     - "monitor SERP positions"
-    - "how am I ranking"
     - "keyword tracking"
     - "position monitoring"
+    # EN-casual
+    - "how am I ranking"
     - "where do I rank for this keyword"
-    - "did my rankings change"
-    - "keyword position tracking"
     - "did my rankings change"
     - "where do I rank now"
     - "check my positions"
+    # EN-question
+    - "what position am I ranking at"
+    - "how are my rankings doing"
+    # ZH-pro
+    - "排名追踪"
+    - "关键词排名"
+    - "SERP位置监控"
+    - "排名变化"
+    # ZH-casual
+    - "查排名"
+    - "排名变了吗"
+    - "我排第几"
+    # JA
+    - "ランキング追跡"
+    - "検索順位チェック"
+    - "順位変動"
+    - "キーワード順位確認"
+    # KO
+    - "순위 추적"
+    - "키워드 순위"
+    - "순위 확인"
+    - "내 순위 어떻게 됐어?"
+    # ES
+    - "seguimiento de rankings"
+    - "posición en buscadores"
+    - "posicionamiento SEO"
+    - "en qué posición estoy"
+    # PT
+    - "rastreamento de rankings"
+    - "monitoramento de posições"
+    - "posição no Google"
+    # Misspellings
+    - "rank trackng"
 ---
 
 # Rank Tracker

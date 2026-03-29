@@ -1,33 +1,28 @@
 ---
 name: internal-linking-optimizer
-version: "5.0.0"
-description: 'Analyze and optimize internal link structure to improve site architecture, distribute page authority, and fix orphan pages. Use when the user asks to "fix internal links", "improve site architecture", "link structure", "distribute page authority", "internal linking strategy", "orphan pages", "site architecture is messy", or "pages have no links pointing to them", "pages have no links", or "site structure is messy". For a broader on-page audit, see on-page-seo-auditor. For external link analysis, see backlink-analyzer.'
+description: 'Optimize internal links: site architecture, authority distribution, orphan pages, crawl depth. "Site structure is messy" / "内链怎么做" / "孤立页面". 内链优化/站内链接/网站架构/权重 内部リンク最適化 내부링크 enlaces internos'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "low"
   tags:
     - seo
-    - internal linking
-    - site architecture
-    - link structure
-    - page authority
-    - link equity
-    - content silos
-    - navigation optimization
-    - internal-links
+    - internal-linking
     - site-architecture
     - link-equity
     - orphan-pages
     - topical-authority
-    - hub-and-spoke
-    - pillar-cluster
-    - anchor-text
     - crawl-depth
+    - 内链优化
+    - 内部リンク
+    - 내부링크
+    - enlaces-internos
   triggers:
+    # EN-formal
     - "fix internal links"
     - "improve site architecture"
     - "link structure"
@@ -35,11 +30,38 @@ metadata:
     - "internal linking strategy"
     - "site navigation"
     - "link equity"
+    # EN-casual
     - "orphan pages"
     - "site architecture is messy"
-    - "pages have no links pointing to them", "pages have no links", or "site structure is messy"
+    - "pages have no links pointing to them"
     - "pages have no links"
     - "site structure is messy"
+    # EN-question
+    - "how to improve internal linking"
+    - "how to fix orphan pages"
+    # ZH-pro
+    - "内链优化"
+    - "站内链接"
+    - "网站架构"
+    - "权重传递"
+    - "锚文本优化"
+    # ZH-casual
+    - "内链怎么做"
+    - "孤立页面"
+    - "网站结构乱"
+    # JA
+    - "内部リンク最適化"
+    - "サイト構造"
+    # KO
+    - "내부 링크 최적화"
+    - "사이트 구조"
+    # ES
+    - "enlaces internos"
+    - "arquitectura del sitio"
+    # PT
+    - "links internos"
+    # Misspellings
+    - "internal linkng"
 ---
 
 # Internal Linking Optimizer

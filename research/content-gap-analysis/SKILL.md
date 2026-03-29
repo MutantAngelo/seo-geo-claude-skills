@@ -1,43 +1,67 @@
 ---
 name: content-gap-analysis
-version: "5.0.0"
-description: 'Find content opportunities by identifying topics and keywords your competitors cover that you don''t. Use when the user asks to "find content gaps", "what am I missing", "topics to cover", "content opportunities", "what topics am I missing", "where are my content blind spots", "untapped topics", or "content strategy gaps", "what should I cover next", or "topics I haven't written about". For broader competitive intelligence, see competitor-analysis. For general keyword discovery, see keyword-research.'
+description: "Find content gaps: topics and keywords competitors cover that you don't. Editorial calendar planning. \"What am I missing\" / \"缺什么内容\" / \"竞品写了什么\". 内容缺口/选题规划/内容机会 コンテンツギャップ 콘텐츠갭 brechas contenido"
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
-    - content gaps
-    - content opportunities
-    - topic analysis
-    - content strategy
-    - competitive content
     - content-gaps
-    - topic-gaps
-    - missing-content
-    - content-opportunities
-    - competitive-gap
-    - topic-coverage
-    - editorial-calendar
+    - topic-analysis
     - content-strategy
+    - editorial-calendar
+    - competitive-gap
+    - content-opportunities
+    - 内容缺口
+    - コンテンツギャップ
+    - 콘텐츠갭
+    - brechas-contenido
   triggers:
+    # EN-formal
     - "find content gaps"
+    - "content opportunities"
+    - "topic analysis"
+    - "content strategy gaps"
+    - "editorial calendar"
+    - "untapped topics"
+    # EN-casual
     - "what am I missing"
     - "topics to cover"
-    - "content opportunities"
     - "what do competitors write about"
-    - "untapped topics"
-    - "content strategy gaps", "what should I cover next", or "topics I haven't written about"
     - "what should I cover next"
     - "topics I haven't written about"
-    - "what topics am I missing"
     - "they cover this but I don't"
-    - "where are my content blind spots"
+    # EN-question
+    - "what topics am I missing"
+    - "what content should I create"
+    # ZH-pro
+    - "内容缺口分析"
+    - "选题规划"
+    - "内容机会"
+    - "竞品话题"
+    # ZH-casual
+    - "缺什么内容"
+    - "竞品写了什么"
+    - "还应该写什么"
+    # JA
+    - "コンテンツギャップ"
+    - "コンテンツ機会"
+    # KO
+    - "콘텐츠 갭 분석"
+    - "콘텐츠 기회"
+    # ES
+    - "brechas de contenido"
+    - "oportunidades de contenido"
+    # PT
+    - "lacunas de conteúdo"
+    # Misspellings
+    - "content gab analysis"
 ---
 
 # Content Gap Analysis

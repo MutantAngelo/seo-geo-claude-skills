@@ -1,13 +1,13 @@
 ---
 name: seo-content-writer
-version: "5.0.0"
-description: 'Write search-engine-optimized blog posts, landing pages, and articles with keyword integration, header hierarchy, and featured snippet targeting. Use when the user asks to "write SEO content", "create a blog post", "write an article", "draft optimized content", "write a landing page", "SEO copywriting", "write me a blog post", "draft an article about", or "help me write about". Creates keyword-optimized content using a 12-step workflow with CORE-EEAT checklist, title optimization, meta description, H1/H2/H3 hierarchy, and internal/external linking. For AI-citation optimization, see geo-content-optimizer. For updating existing content, see content-refresher.'
+description: 'Write SEO blog posts, articles, landing pages with keywords, headers, snippet targeting. "Write me a blog post" / "帮我写文章" / "写一篇好文章". SEO文章写作/博客创作/内容优化/排名提升 SEOライティング SEO글쓰기/블로그작성 redacción SEO'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
@@ -16,19 +16,73 @@ metadata:
     - seo-copywriting
     - content-creation
     - featured-snippet-optimization
-    - how-to-guide
+    - article-writing
+    - landing-page
+    - surferSEO-alternative
+    - clearscope-alternative
+    - SEO文章
+    - 博客写作
+    - SEOライティング
+    - SEO글쓰기
+    - redaccion-seo
   triggers:
+    # EN-formal
     - "write SEO content"
     - "create blog post"
     - "write an article"
     - "content writing"
     - "draft optimized content"
     - "write for SEO"
+    - "SEO copywriting"
     - "blog writing"
+    # EN-casual
+    - "write me a blog post"
     - "write me an article"
-    - "create a blog post about"
-    - "help me write SEO content"
-    - "draft content for"
+    - "help me write about"
+    - "draft an article about"
+    - "I need a blog post"
+    - "create content for my site"
+    # EN-question
+    - "how do I write content that ranks"
+    - "how to write SEO friendly content"
+    - "what makes content rank well"
+    # EN-competitor
+    - "SurferSEO alternative"
+    - "Clearscope alternative"
+    - "Jasper AI alternative for SEO"
+    # ZH-pro
+    - "SEO文章写作"
+    - "SEO内容创作"
+    - "博客写作"
+    - "内容优化"
+    - "内容创作"
+    # ZH-casual
+    - "帮我写文章"
+    - "写一篇博客"
+    - "排名上不去"
+    - "帮我写SEO文章"
+    - "写一篇SEO文章"
+    # JA
+    - "SEOライティング"
+    - "SEO記事作成"
+    - "ブログ記事作成"
+    - "SEOコンテンツ"
+    # KO
+    - "SEO 글쓰기"
+    - "블로그 작성"
+    - "SEO 콘텐츠 작성"
+    - "블로그 글 작성해줘"
+    - "이 주제로 글 써봐"
+    # ES
+    - "redacción SEO"
+    - "escribir artículo SEO"
+    - "contenido optimizado"
+    # PT
+    - "redação SEO"
+    - "escrever artigo SEO"
+    # Misspellings
+    - "SEO copywritting"
+    - "writting SEO content"
 ---
 
 # SEO Content Writer

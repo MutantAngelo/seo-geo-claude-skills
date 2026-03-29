@@ -1,40 +1,67 @@
 ---
 name: content-quality-auditor
-version: "5.0.0"
-description: 'Run the full 80-item CORE-EEAT audit across 8 dimensions with content-type weighted scoring, veto checks, and prioritized fix plans. Use when the user asks "is this ready to publish", "how good is my content", "grade my article", "audit content quality", "EEAT score", "CORE-EEAT audit", "content quality check", "content improvement plan". For SEO page element audits, see on-page-seo-auditor. For domain-level authority, see domain-authority-auditor.'
+description: 'Publish-readiness gate: 80-item CORE-EEAT audit with weighted scoring, veto checks, and fix plan. "Ready to publish?" / "grade my article" / "文章能发吗" / "内容打几分". 内容質量/EEAT評分/発布チェック コンテンツ品質 콘텐츠품질 auditoría EEAT'
+version: "5.1.0"
 license: Apache-2.0
 allowed-tools: WebFetch
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "high"
   tags:
     - seo
     - geo
     - e-e-a-t
-    - helpful-content
+    - core-eeat
     - content-quality
     - content-scoring
-    - ai-quality
-    - core-eeat
-    - experience-expertise-authoritativeness-trust
-    - helpful-content-update
+    - helpful-content
+    - publish-readiness
+    - 内容质量
+    - コンテンツ品質
+    - 콘텐츠품질
+    - auditoria-eeat
   triggers:
+    # EN-formal
+    - "audit content quality"
+    - "EEAT score"
+    - "CORE-EEAT audit"
+    - "content quality check"
+    - "content assessment"
+    - "quality score"
+    # EN-casual
     - "is this ready to publish"
     - "grade my article"
     - "check before publishing"
-    - "audit content quality"
-    - "EEAT score"
-    - "content quality check"
-    - "CORE-EEAT audit"
     - "how good is my content"
-    - "content assessment"
-    - "quality score"
     - "is my content good enough to rank"
-    - "EEAT check"
     - "rate my content quality"
+    # EN-question
+    - "is my content ready to publish"
+    - "how do I improve content quality"
+    # ZH-pro
+    - "内容质量审计"
+    - "EEAT评分"
+    - "内容评估"
+    # ZH-casual
+    - "文章能发吗"
+    - "内容打几分"
+    - "文章写得怎么样"
+    # JA
+    - "コンテンツ品質監査"
+    - "E-E-A-T評価"
+    # KO
+    - "콘텐츠 품질 감사"
+    - "EEAT 점수"
+    # ES
+    - "auditoría de calidad de contenido"
+    - "puntuación EEAT"
+    # PT
+    - "auditoria de qualidade"
+    # Misspellings
+    - "EEAT scroe"
 ---
 
 # Content Quality Auditor

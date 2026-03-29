@@ -1,46 +1,67 @@
 ---
 name: alert-manager
-version: "5.0.0"
-description: 'Set up automated monitoring and notifications for SEO ranking drops, traffic changes, technical issues, and competitor movements. Use when the user asks to "set up SEO alerts", "notify me when rankings drop", "traffic alerts", "watch competitor changes", "alert me if rankings drop", "notify me of traffic changes", "monitor rankings", or "watch my keywords for changes", "notify me if rankings drop", "watch my keywords", or "alert me about changes". For detailed rank analysis, see rank-tracker. For comprehensive reporting, see performance-reporter.'
+description: 'Automated SEO alerts: ranking drops, traffic changes, technical issues, competitor movements with notifications. "Alert if rankings drop" / "排名掉了提醒我" / "流量异常". SEO预警/排名监控/流量报警/自动提醒 アラート設定 알림설정 alertas SEO'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "low"
   tags:
     - seo
     - geo
-    - alerts
-    - monitoring
-    - ranking alerts
-    - traffic monitoring
-    - competitor alerts
-    - seo notifications
-    - proactive monitoring
-    - seo-monitoring
-    - ranking-drop-alert
-    - traffic-drop-alert
-    - technical-monitoring
     - seo-alerts
+    - ranking-alerts
+    - traffic-monitoring
+    - competitor-alerts
     - automated-monitoring
-    - threshold-alerts
     - anomaly-detection
+    - SEO预警
+    - SEOアラート
+    - SEO알림
+    - alertas-seo
   triggers:
+    # EN-formal
     - "set up SEO alerts"
     - "monitor rankings"
-    - "notify me when rankings drop"
-    - "traffic alerts"
-    - "watch competitor changes"
-    - "alert me"
     - "ranking notifications"
+    - "traffic alerts"
+    - "competitor alerts"
+    - "automated monitoring"
+    # EN-casual
+    - "notify me when rankings drop"
     - "alert me if rankings drop"
     - "notify me of traffic changes"
-    - "watch my keywords for changes", "notify me if rankings drop", "watch my keywords", or "alert me about changes"
-    - "notify me if rankings drop"
-    - "watch my keywords"
+    - "watch competitor changes"
+    - "watch my keywords for changes"
     - "alert me about changes"
+    # EN-question
+    - "how to monitor my rankings"
+    - "how to set up SEO alerts"
+    # ZH-pro
+    - "SEO预警"
+    - "排名监控"
+    - "流量报警"
+    - "竞品变动提醒"
+    # ZH-casual
+    - "排名掉了提醒我"
+    - "流量异常"
+    - "有变化通知我"
+    # JA
+    - "SEOアラート"
+    - "ランキング監視"
+    # KO
+    - "SEO 알림"
+    - "순위 모니터링"
+    # ES
+    - "alertas SEO"
+    - "monitoreo de rankings"
+    # PT
+    - "alertas de SEO"
+    # Misspellings
+    - "SEO allerts"
 ---
 
 # Alert Manager

@@ -1,13 +1,13 @@
 ---
 name: meta-tags-optimizer
-version: "5.0.0"
-description: 'Create and optimize title tags, meta descriptions, Open Graph tags, and Twitter cards for maximum click-through rates. Use when the user asks to "optimize title tag", "write meta description", "improve CTR", "Open Graph tags", "social media preview", "fix my meta tags", "OG tags not showing", "my click rate is low", "fix my title tag", or "social preview looks wrong". Produces optimized meta tags with character counting, A/B test variations, and CTR analysis. For a broader on-page audit, see on-page-seo-auditor. For structured data markup, see schema-markup-generator.'
+description: 'Optimize title tags, meta descriptions, Open Graph, Twitter cards for maximum CTR with A/B variations. "Click rate is low" / "点击率太低" / "标题不好". 标题优化/元描述/OG标签/CTR メタタグ最適化/CTR改善 메타태그최적화 meta tags SEO'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "low"
   tags:
     - seo
@@ -16,9 +16,15 @@ metadata:
     - meta-description
     - open-graph
     - twitter-card
-    - ctr
+    - ctr-optimization
     - social-sharing
+    - 标题优化
+    - 元描述
+    - メタタグ
+    - 메타태그
+    - meta-tags-seo
   triggers:
+    # EN-formal
     - "optimize title tag"
     - "write meta description"
     - "improve CTR"
@@ -26,10 +32,51 @@ metadata:
     - "social media preview"
     - "title optimization"
     - "meta tags"
+    - "Twitter cards"
+    # EN-casual
     - "my title tag needs work"
     - "low click-through rate"
     - "fix my meta tags"
     - "OG tags not showing"
+    - "social preview looks wrong"
+    - "my click rate is low"
+    # EN-question
+    - "how to write a good title tag"
+    - "how to improve click-through rate"
+    - "what is a good meta description"
+    # EN-competitor
+    - "Yoast SEO title tool"
+    - "RankMath title optimizer"
+    # ZH-pro
+    - "标题标签优化"
+    - "元描述优化"
+    - "OG标签"
+    - "点击率提升"
+    - "社交预览"
+    - "TDK优化"
+    # ZH-casual
+    - "标题不好"
+    - "点击率太低"
+    - "社交分享预览不对"
+    - "标题怎么写"
+    - "TDK怎么写"
+    # JA
+    - "メタタグ最適化"
+    - "タイトルタグ"
+    - "CTR改善"
+    # KO
+    - "메타 태그 최적화"
+    - "제목 태그"
+    - "클릭률 개선"
+    # ES
+    - "optimizar meta tags"
+    - "mejorar CTR"
+    - "etiquetas Open Graph"
+    # PT
+    - "otimizar meta tags"
+    # Misspellings
+    - "meta discription"
+    - "tittle tag"
 ---
 
 # Meta Tags Optimizer

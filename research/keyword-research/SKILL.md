@@ -1,43 +1,104 @@
 ---
 name: keyword-research
-version: "5.0.0"
-description: 'Discover high-value SEO keywords with search intent analysis, difficulty scoring, topic clustering, and AI citation potential. Use when the user asks to "find keywords", "keyword research", "what should I write about", "find me topics", "what are people googling", "keyword difficulty score", "identify ranking opportunities", "topic ideas", "what are people searching for", or "long-tail keyword suggestions". For competitor keyword gaps, see competitor-analysis. For topic coverage gaps, see content-gap-analysis.'
+description: 'Find high-value SEO keywords: search volume, difficulty, intent, topic clusters. "What should I write about" / "找选题" / "帮我挖词". 关键词研究/长尾词/搜索量/内容选题 キーワード調査/検索ボリューム 키워드분석/검색량 investigación palabras clave'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
     - keywords
+    - keyword-research
+    - search-volume
+    - keyword-difficulty
+    - topic-clusters
+    - long-tail-keywords
+    - search-intent
+    - content-calendar
     - ahrefs
     - semrush
     - google-keyword-planner
-    - kd-score
-    - search-volume
-    - cpc
-    - topic-clusters
-    - pillar-pages
-    - long-tail-keywords
-    - content-calendar
-    - keyword-gap
-    - search-intent-classification
+    - 关键词研究
+    - SEO关键词
+    - キーワード調査
+    - 키워드분석
+    - palabras-clave
   triggers:
-    - "find keywords"
+    # EN-formal
     - "keyword research"
-    - "what should I write about"
+    - "find keywords"
+    - "keyword analysis"
+    - "keyword discovery"
+    - "search volume analysis"
+    - "keyword difficulty"
+    - "topic research"
     - "identify ranking opportunities"
-    - "topic ideas"
-    - "search volume"
-    - "content opportunities"
+    # EN-casual
+    - "what should I write about"
     - "what are people searching for"
-    - "which keywords should I target"
-    - "give me keyword ideas"
-    - "find me topics"
     - "what are people googling"
+    - "find me topics to write"
+    - "give me keyword ideas"
+    - "which keywords should I target"
+    - "why is my traffic low"
+    - "I need content ideas"
+    # EN-question
+    - "how do I find good keywords"
+    - "what keywords should I target"
+    - "how competitive is this keyword"
+    # EN-competitor
+    - "Ahrefs keyword explorer alternative"
+    - "Semrush keyword magic tool"
+    - "Google Keyword Planner alternative"
+    - "Ubersuggest alternative"
+    # ZH-pro
+    - "关键词研究"
+    - "关键词分析"
+    - "搜索量查询"
+    - "关键词难度"
+    - "SEO关键词"
+    - "长尾关键词"
+    - "词库整理"
+    - "关键词布局"
+    - "关键词挖掘"
+    # ZH-casual
+    - "写什么内容好"
+    - "找选题"
+    - "帮我挖词"
+    - "不知道写什么"
+    - "查关键词"
+    - "选词"
+    - "帮我找词"
+    # JA
+    - "キーワード調査"
+    - "キーワードリサーチ"
+    - "SEOキーワード分析"
+    - "検索ボリューム"
+    - "ロングテールキーワード"
+    - "検索意図分析"
+    # KO
+    - "키워드 리서치"
+    - "키워드 분석"
+    - "검색량 분석"
+    - "키워드 어떻게 찾아요?"
+    - "검색어 분석"
+    - "경쟁도 낮은 키워드는?"
+    # ES
+    - "investigación de palabras clave"
+    - "análisis de palabras clave"
+    - "volumen de búsqueda"
+    - "posicionamiento web"
+    - "cómo encontrar palabras clave"
+    # PT
+    - "pesquisa de palavras-chave"
+    # Misspellings
+    - "keywrod research"
+    - "keywork research"
 ---
 
 # Keyword Research

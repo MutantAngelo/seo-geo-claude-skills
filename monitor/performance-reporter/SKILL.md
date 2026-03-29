@@ -1,47 +1,70 @@
 ---
 name: performance-reporter
-version: "5.0.0"
-description: 'Generate consolidated SEO and GEO performance dashboards combining rankings, traffic, backlinks, and AI visibility metrics for stakeholders. Use when the user asks to "generate SEO report", "performance report", "SEO dashboard", "report to stakeholders", "show me the numbers", "monthly SEO report", "traffic report", or "present SEO results to my boss". For detailed rank tracking, see rank-tracker. For link-specific analysis, see backlink-analyzer.'
+description: 'SEO/GEO dashboards: rankings, traffic, backlinks, AI visibility for stakeholders and executives. "Monthly SEO report" / "出SEO报告" / "汇报给老板". SEO报告/绩效仪表盘/流量报告 SEOレポート SEO리포트 informe SEO'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
     - geo
-    - performance report
-    - seo report
-    - traffic analysis
-    - seo dashboard
-    - executive summary
-    - analytics report
-    - kpi tracking
     - seo-reporting
+    - performance-report
     - kpi-dashboard
-    - monthly-report
     - traffic-report
-    - analytics-report
+    - monthly-report
     - stakeholder-report
-    - seo-metrics
-    - organic-traffic
-    - ctr-report
+    - SEO报告
+    - SEOレポート
+    - SEO리포트
+    - informe-seo
   triggers:
+    # EN-formal
     - "generate SEO report"
     - "performance report"
     - "traffic report"
     - "SEO dashboard"
-    - "report to stakeholders"
-    - "monthly report"
     - "SEO analytics"
-    - "show me the numbers"
+    - "monthly report"
+    # EN-casual
+    - "report to stakeholders"
     - "monthly SEO report"
+    - "show me my SEO results"
     - "present SEO results to my boss"
-    - "show me the numbers"
     - "report to my boss"
     - "monthly SEO summary"
+    # EN-question
+    - "how are my SEO metrics"
+    - "how is my SEO performing"
+    # ZH-pro
+    - "SEO报告"
+    - "绩效仪表盘"
+    - "流量报告"
+    - "数据看板"
+    # ZH-casual
+    - "出SEO报告"
+    - "汇报给老板"
+    - "看看数据"
+    - "月报"
+    - "出月报"
+    - "周报"
+    # JA
+    - "SEOレポート"
+    - "パフォーマンスレポート"
+    # KO
+    - "SEO 리포트"
+    - "성과 보고서"
+    # ES
+    - "informe SEO"
+    - "reporte de rendimiento"
+    # PT
+    - "relatório SEO"
+    # Misspellings
+    - "SEO repoort"
 ---
 
 # Performance Reporter

@@ -1,44 +1,90 @@
 ---
 name: on-page-seo-auditor
-version: "5.0.0"
-description: 'Audit on-page HTML elements including title tags, headers, image alt text, and internal links with a scored SEO report. Use when the user asks to "audit page SEO", "on-page SEO check", "SEO score", "page optimization", "what SEO issues does this page have", "score my page", "why is this page not ranking", "check my page", "why isn''t this ranking", or "what''s wrong with my SEO". For server, speed, and crawl issues, see technical-seo-checker. For full EEAT content quality scoring, see content-quality-auditor.'
+description: "Audit on-page SEO: titles, headers, images, links with scored report and fix priorities. \"Why isn't this ranking\" / \"页面诊断\" / \"SEO评分\". 页面SEO审计/排名诊断/网页优化/H1检查 ページSEO監査 페이지SEO감사 auditoría on-page"
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 allowed-tools: WebFetch
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "medium"
   tags:
     - seo
-    - on-page audit
-    - page optimization
-    - seo audit
-    - content optimization
-    - header tags
-    - image optimization
-    - seo score
-    - page-audit
+    - on-page-audit
+    - page-optimization
     - seo-score
-    - on-page-optimization
-    - optimization-checklist
-    - seo-checklist
-    - page-score
+    - content-audit
     - h1-optimization
     - meta-audit
-    - content-audit
+    - seo-checklist
+    - yoast-alternative
+    - screaming-frog-alternative
+    - 页面SEO
+    - 网页优化
+    - ページSEO
+    - 페이지감사
+    - auditoria-seo
   triggers:
+    # EN-formal
     - "audit page SEO"
     - "on-page SEO check"
     - "SEO score"
     - "page optimization"
-    - "what SEO issues"
-    - "check my page"
     - "on-page audit"
-    - "what's wrong with this page's SEO"
+    - "SEO page analysis"
+    - "content audit"
+    # EN-casual
+    - "what SEO issues does this page have"
+    - "check my page"
     - "score my page"
     - "why isn't this page ranking"
+    - "what's wrong with this page's SEO"
+    - "is my page optimized"
+    - "my rankings tanked"
+    - "why did my rankings drop"
+    # EN-question
+    - "why is my page not ranking"
+    - "how do I improve my page SEO"
+    - "what SEO problems does this page have"
+    # EN-competitor
+    - "Screaming Frog alternative"
+    - "Yoast SEO alternative"
+    # ZH-pro
+    - "页面SEO审计"
+    - "网页优化检查"
+    - "SEO评分"
+    - "页面诊断"
+    - "页面优化分析"
+    # ZH-casual
+    - "页面有什么问题"
+    - "为什么排不上去"
+    - "检查一下我的页面"
+    - "SEO打分"
+    - "排名上不去怎么办"
+    - "网页收录问题"
+    # JA
+    - "ページSEO監査"
+    - "オンページSEO"
+    - "ページ最適化"
+    - "SEOスコア"
+    # KO
+    - "페이지 SEO 감사"
+    - "온페이지 SEO"
+    - "SEO 점수"
+    - "이 페이지 뭐가 문제야?"
+    - "왜 순위가 안 올라가?"
+    - "SEO 점수 확인해줘"
+    # ES
+    - "auditoría SEO on-page"
+    - "análisis de página SEO"
+    - "puntuación SEO"
+    # PT
+    - "auditoria SEO on-page"
+    # Misspellings
+    - "on page SEO aduit"
+    - "SEO scroe"
 ---
 
 # On-Page SEO Auditor

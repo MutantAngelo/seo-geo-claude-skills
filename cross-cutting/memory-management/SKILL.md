@@ -1,44 +1,62 @@
 ---
 name: memory-management
-version: "5.0.0"
-description: 'Three-tier project memory (HOT/WARM/COLD) with automatic promotion and demotion for SEO and GEO campaigns. Persists strategy, keywords, audit results, and entity profiles across sessions. Use when the user asks to "remember this for next time", "what did we decide last time", "save my project context", "remember project context", "save SEO data", "track campaign progress", "project status", "what do we know so far". Manages hot-cache loading, cross-skill aggregation, and archival lifecycle.'
+description: 'Persist SEO/GEO campaign context across Claude sessions. Three-tier memory (HOT/WARM/COLD). Persist keywords, audits, entities across sessions. "Remember this" / "保存进度" / "上次说了什么". 项目记忆/SEO数据保存/跨会话 プロジェクト記憶 프로젝트메모리 memoria SEO'
+version: "5.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
 homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
 metadata:
   author: aaron-he-zhu
-  version: "5.0.0"
+  version: "5.1.0"
   geo-relevance: "low"
   tags:
     - seo
     - geo
-    - project memory
-    - context management
-    - campaign tracking
-    - data persistence
-    - keyword tracking
-    - project context
-    - context-memory
     - project-memory
-    - seo-tracking
+    - context-management
     - campaign-tracking
     - session-context
     - hot-cache
-    - project-continuity
+    - 项目记忆
+    - プロジェクト記憶
+    - 프로젝트메모리
+    - memoria-proyecto
   triggers:
+    # EN-formal
     - "remember project context"
     - "save SEO data"
     - "track campaign progress"
     - "store keyword data"
     - "manage project memory"
-    - "save progress"
     - "project context"
+    # EN-casual
     - "remember this for next time"
     - "save my keyword data"
     - "keep track of this campaign"
     - "what did we decide last time"
     - "what do we know so far"
     - "project status"
+    # EN-question
+    - "how to save project progress"
+    # ZH-pro
+    - "项目记忆管理"
+    - "SEO数据保存"
+    - "跨会话记忆"
+    # ZH-casual
+    - "保存进度"
+    - "上次说了什么"
+    - "记住这个"
+    # JA
+    - "プロジェクト記憶"
+    - "SEOデータ保存"
+    # KO
+    - "프로젝트 메모리"
+    - "데이터 저장"
+    # ES
+    - "memoria del proyecto"
+    - "guardar progreso"
+    # PT
+    - "memória do projeto"
 ---
 
 # Memory Management
